@@ -3,6 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { Menu, X, ArrowUpRight, ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,7 +14,7 @@ export function Header() {
     const element = document.getElementById(targetId)
 
     if (element) {
-      const headerOffset = 100
+      const headerOffset = 72
       const elementPosition = element.getBoundingClientRect().top + window.scrollY
       const offsetPosition = elementPosition - headerOffset
 
@@ -39,26 +40,19 @@ export function Header() {
         className={`max-w-7xl mx-auto transition-all duration-300 rounded-2xl ${
           isScrolled
             ? "bg-white/70 backdrop-blur-xl border border-zinc-200 px-6 py-3"
-            : "bg-background/90 backdrop-blur-md px-6 py-5"
+            : "bg-background/90 backdrop-blur-md px-6 py-3"
         }`}
       >
         <div className="flex items-center justify-between">
-          <a href="#" onClick={handleLogoClick} className="flex items-center gap-2 cursor-pointer">
-            <svg
-              className={`w-6 h-6 transition-colors duration-300 ${isScrolled ? "text-black" : "text-foreground"}`}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-              <polyline points="9 22 9 12 15 12 15 22" />
-            </svg>
-            <span
-              className={`text-lg font-medium tracking-tight transition-colors duration-300 ${isScrolled ? "text-black" : "text-foreground"}`}
-            >
-              MILELE
-            </span>
+          <a href="#" onClick={handleLogoClick} className="flex items-center cursor-pointer">
+            <Image
+              src="/images/logo.svg"
+              alt="Milele Fire Safety Services"
+              width={320}
+              height={103}
+              className="h-16 w-auto object-contain"
+              priority
+            />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
