@@ -27,7 +27,7 @@ const services = [
 export function ServicesSection() {
 
   return (
-    <section id="servicios" className="py-24 px-6 pb-24 relative overflow-hidden bg-zinc-50/50">
+    <section id="servicios" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative overflow-hidden bg-zinc-50/50">
       <div className="absolute top-0 left-0 right-0 flex justify-center pointer-events-none z-0">
         <span className="font-bold text-center text-[18vw] sm:text-[16vw] md:text-[14vw] lg:text-[12vw] leading-none tracking-tighter text-zinc-100 whitespace-nowrap">
           SERVICIOS
@@ -35,19 +35,19 @@ export function ServicesSection() {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-[0.2em] text-red-600 font-semibold mb-4">Nuestros Servicios</p>
-          <h2 className="text-4xl md:text-5xl font-normal mb-6 text-balance font-serif">Protección integral contra incendios</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <p className="text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.2em] text-red-600 font-semibold mb-3 sm:mb-4">Nuestros Servicios</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal mb-4 sm:mb-6 text-balance font-serif">Protección integral contra incendios</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed text-sm sm:text-base px-2 sm:px-0">
             Ofrecemos soluciones completas de seguridad contra incendios, cumpliendo con todas las normativas vigentes y certificaciones requeridas.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-8 rounded-3xl bg-white border border-zinc-100 hover:border-red-200 hover:shadow-lg hover:shadow-red-500/5 transition-all duration-300 text-left flex flex-col"
+              className="group p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white border border-zinc-100 hover:border-red-200 hover:shadow-lg hover:shadow-red-500/5 transition-all duration-300 text-left flex flex-col"
             >
               <div className="mb-6 flex items-center justify-between">
                 <div className="p-4 rounded-2xl bg-red-50 text-red-600">

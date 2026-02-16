@@ -120,17 +120,17 @@ export function TestimonialsSection() {
   }, [isPaused, isInitialized])
 
   return (
-    <section id="testimonials" className="py-32 px-6">
+    <section id="testimonials" className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-normal leading-tight font-serif">Lo que dicen de nosotros</h2>
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal leading-tight font-serif">Lo que dicen de nosotros</h2>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {/* First row - scrolls left to right */}
           <div className="relative">
-            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+            <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
             <div
               ref={scrollRef}
@@ -139,22 +139,22 @@ export function TestimonialsSection() {
               onMouseLeave={() => setIsPaused(false)}
               onTouchStart={() => setIsPaused(true)}
               onTouchEnd={() => setIsPaused(false)}
-              style={{ scrollBehavior: "auto" }}
+              style={{ scrollBehavior: "auto", gap: "16px" }}
             >
               {duplicatedTestimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-full sm:w-[400px] bg-card border border-border rounded-2xl p-8 border-none py-4"
+                  className="flex-shrink-0 w-[300px] sm:w-[360px] md:w-[400px] bg-card border border-border rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 border-none"
                 >
-                  <div className="flex items-start gap-4 mb-6">
+                  <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
                     <Image
                       src={testimonial.avatar || "/placeholder.svg"}
                       alt={testimonial.name}
                       width={48}
                       height={48}
-                      className="w-12 h-12 rounded-full object-cover"
+                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover flex-shrink-0"
                     />
-                    <p className="text-foreground leading-relaxed flex-1 text-lg">
+                    <p className="text-foreground leading-relaxed flex-1 text-sm sm:text-base md:text-lg">
                       &ldquo;{testimonial.content}&rdquo;
                     </p>
                   </div>
@@ -169,8 +169,8 @@ export function TestimonialsSection() {
 
           {/* Second row - scrolls right to left */}
           <div className="relative">
-            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+            <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
             <div
               ref={scrollRef2}
@@ -184,23 +184,23 @@ export function TestimonialsSection() {
               {duplicatedTestimonials2.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-full sm:w-[400px] bg-card border border-border rounded-2xl p-8 border-none py-4"
+                  className="flex-shrink-0 w-[300px] sm:w-[360px] md:w-[400px] bg-card border border-border rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 border-none"
                 >
-                  <div className="flex items-start gap-4 mb-6">
+                  <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
                     <Image
                       src={testimonial.avatar || "/placeholder.svg"}
                       alt={testimonial.name}
                       width={48}
                       height={48}
-                      className="w-12 h-12 rounded-full object-cover"
+                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover flex-shrink-0"
                     />
-                    <p className="text-lg text-foreground leading-relaxed flex-1">
+                    <p className="text-sm sm:text-base md:text-lg text-foreground leading-relaxed flex-1">
                       &ldquo;{testimonial.content}&rdquo;
                     </p>
                   </div>
                   <div className="mt-auto">
                     <p className="text-foreground text-sm font-bold">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </div>
               ))}

@@ -67,7 +67,7 @@ export function HeroSection() {
       </div>
 
       <div
-        className="absolute bottom-0 left-0 right-0 w-full overflow-hidden pointer-events-none z-[5] flex items-end justify-center"
+        className="absolute bottom-0 left-0 right-0 w-full overflow-hidden pointer-events-none z-20 flex items-end justify-center"
         style={{
           transform: `translateY(${scrollProgress * 150}px)`,
           opacity: 1 - scrollProgress * 0.8,
@@ -87,21 +87,52 @@ export function HeroSection() {
           <div
             className={`transition-all duration-1000 delay-[800ms] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}
           >
-            <h1 className="font-serif text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.5rem] xl:text-[7.5rem] 2xl:text-[8.5rem] font-normal leading-tight mb-6 w-full px-4 max-w-6xl mx-auto text-balance">
+            <h1 className="font-serif text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] xl:text-[6.5rem] 2xl:text-[7.5rem] font-normal leading-tight mb-4 sm:mb-6 w-full px-2 sm:px-4 max-w-6xl mx-auto text-balance">
               <AnimatedText text="La Protección que tu Espacio Merece" delay={0.3} />
             </h1>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-8">
-          <div className="relative">
-            <div
-              className={`relative w-[300px] md:w-[400px] lg:w-[480px] will-change-transform transition-all duration-[1500ms] ease-out delay-500 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
-              }`}
-            >
-              <img src="/images/extintor.png" alt="Extintor Yukon - Proteccion contra incendios" className="w-full h-auto relative z-10 drop-shadow-2xl" />
-            </div>
+        <div className="flex items-end justify-center px-2 sm:px-0">
+          {/* Extintor izquierdo inclinado - oculto en mobile muy chico */}
+          <div
+            className={`relative w-[100px] sm:w-[140px] md:w-[200px] lg:w-[260px] xl:w-[300px] will-change-transform transition-all duration-[1500ms] ease-out delay-300 hidden sm:block -mr-8 sm:-mr-12 md:-mr-16 lg:-mr-20 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
+            }`}
+          >
+            <img 
+              src="/images/extintor.png" 
+              alt="Extintor Yukon - Proteccion contra incendios" 
+              className="w-full h-auto relative z-10 drop-shadow-2xl"
+              style={{ transform: "rotate(-15deg)" }}
+            />
+          </div>
+
+          {/* Extintor central */}
+          <div
+            className={`relative w-[200px] sm:w-[260px] md:w-[340px] lg:w-[420px] xl:w-[480px] will-change-transform transition-all duration-[1500ms] ease-out delay-500 z-10 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
+            }`}
+          >
+            <img 
+              src="/images/extintor.png" 
+              alt="Extintor Yukon - Proteccion contra incendios" 
+              className="w-full h-auto relative z-10 drop-shadow-2xl"
+            />
+          </div>
+
+          {/* Extintor derecho inclinado - oculto en mobile muy chico */}
+          <div
+            className={`relative w-[100px] sm:w-[140px] md:w-[200px] lg:w-[260px] xl:w-[300px] will-change-transform transition-all duration-[1500ms] ease-out delay-700 hidden sm:block -ml-8 sm:-ml-12 md:-ml-16 lg:-ml-20 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
+            }`}
+          >
+            <img 
+              src="/images/extintor.png" 
+              alt="Extintor Yukon - Proteccion contra incendios" 
+              className="w-full h-auto relative z-10 drop-shadow-2xl"
+              style={{ transform: "rotate(15deg)" }}
+            />
           </div>
         </div>
       </div>

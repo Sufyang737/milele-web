@@ -1,13 +1,25 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Menu, X, ArrowUpRight, ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
-  const isScrolled = true
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+
+    // Verificar posición inicial
+    handleScroll()
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault()
@@ -37,10 +49,10 @@ export function Header() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "px-4 pt-4" : ""}`}>
       <div
-        className={`max-w-7xl mx-auto transition-all duration-300 rounded-2xl ${
+        className={`max-w-7xl mx-auto transition-all duration-300 ${
           isScrolled
-            ? "bg-white/70 backdrop-blur-xl border border-zinc-200 px-6 py-3"
-            : "bg-background/90 backdrop-blur-md px-6 py-3"
+            ? "bg-white/70 backdrop-blur-xl border border-zinc-200 rounded-2xl px-6 py-3"
+            : "bg-transparent px-6 py-4"
         }`}
       >
         <div className="flex items-center justify-between">
