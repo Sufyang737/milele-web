@@ -116,8 +116,8 @@ export function CertificacionesSection() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4 px-4 sm:px-8 py-3 sm:py-4 bg-red-600 text-white rounded-xl sm:rounded-2xl shadow-xl shadow-red-500/20 text-center sm:text-left">
-            <BadgeCheck className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+          <div className="inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4 px-4 sm:px-8 py-3 sm:py-4 bg-[color:var(--cta)] text-[color:var(--cta-foreground)] rounded-xl sm:rounded-2xl shadow-xl shadow-[0_15px_35px_-20px_rgba(177,138,55,0.6)] text-center sm:text-left">
+            <BadgeCheck className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 text-[color:var(--cta-foreground)]" />
             <span className="font-medium text-sm sm:text-base">Todos nuestros servicios incluyen certificación oficial</span>
           </div>
         </motion.div>

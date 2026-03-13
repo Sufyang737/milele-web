@@ -57,14 +57,14 @@ export function BlogSection() {
         </div>
 
         <div className="flex justify-center">
-          <button className="relative flex items-center gap-0 border border-border rounded-full pl-6 pr-1.5 py-1.5 transition-all duration-300 group overflow-hidden">
-            <span className="absolute inset-0 bg-foreground rounded-full scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-300" />
-            <span className="text-sm text-foreground group-hover:text-background pr-4 uppercase tracking-wide relative z-10 transition-colors duration-300">
+          <button className="relative flex items-center gap-0 border border-[color:var(--cta)] rounded-full pl-6 pr-1.5 py-1.5 transition-all duration-300 group overflow-hidden">
+            <span className="absolute inset-0 bg-[color:var(--cta)] rounded-full scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-300" />
+            <span className="text-sm text-[color:var(--cta-strong)] group-hover:text-[color:var(--cta-foreground)] pr-4 uppercase tracking-wide relative z-10 transition-colors duration-300">
               Browse all articles
             </span>
             <span className="w-10 h-10 rounded-full flex items-center justify-center relative z-10">
-              <ArrowRight className="w-4 h-4 text-foreground group-hover:opacity-0 absolute transition-opacity duration-300" />
-              <ArrowUpRight className="w-4 h-4 text-foreground group-hover:text-background opacity-0 group-hover:opacity-100 transition-all duration-300" />
+              <ArrowRight className="w-4 h-4 text-[color:var(--cta-strong)] group-hover:opacity-0 absolute transition-opacity duration-300" />
+              <ArrowUpRight className="w-4 h-4 text-[color:var(--cta-foreground)] opacity-0 group-hover:opacity-100 transition-all duration-300" />
             </span>
           </button>
         </div>

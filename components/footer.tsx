@@ -37,10 +37,10 @@ export function Footer() {
           <div className="col-span-2 sm:col-span-3 md:col-span-1 mb-4 sm:mb-0">
             <Link href="/" className="flex items-center mb-3 sm:mb-4">
               <Image
-                src="/images/logo.svg"
+                src="/logo-milele-new.png"
                 alt="Milele Fire Safety Services"
                 width={200}
-                height={62}
+                height={200}
                 className="h-12 sm:h-16 w-auto object-contain"
               />
             </Link>

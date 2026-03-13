@@ -66,43 +66,31 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div
-        className="absolute bottom-0 left-0 right-0 w-full overflow-hidden pointer-events-none z-20 flex items-end justify-center"
-        style={{
-          transform: `translateY(${scrollProgress * 150}px)`,
-          opacity: 1 - scrollProgress * 0.8,
-          height: "100%",
-        }}
-      >
-        <span
-          className="block text-white font-bold text-[28vw] sm:text-[25vw] md:text-[22vw] lg:text-[20vw] tracking-tighter select-none text-center leading-none"
-          style={{ marginBottom: "0" }}
-        >
-          MILELE
-        </span>
-      </div>
+
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="text-center mb-12">
           <div
             className={`transition-all duration-1000 delay-[800ms] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}
           >
-            <h1 className="font-serif text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] xl:text-[6.5rem] 2xl:text-[7.5rem] font-normal leading-tight mb-4 sm:mb-6 w-full px-2 sm:px-4 max-w-6xl mx-auto text-balance">
-              <AnimatedText text="La Protección que tu Espacio Merece" delay={0.3} />
+            <h1 className="font-serif text-[2.8rem] sm:text-[3.8rem] md:text-[4.8rem] lg:text-[5.6rem] xl:text-[6.6rem] 2xl:text-[7.6rem] font-bold leading-none mb-2 sm:mb-3 w-full px-2 sm:px-4 max-w-6xl mx-auto text-balance text-black drop-shadow-[0_10px_26px_rgba(0,0,0,0.4)]">
+              MILELE
             </h1>
+            <p className="font-serif text-[1rem] sm:text-[1.2rem] md:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] font-normal tracking-wide text-black drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)] px-2">
+              La protección que tu espacio merece
+            </p>
           </div>
         </div>
 
         <div className="flex items-end justify-center px-2 sm:px-0">
           {/* Extintor izquierdo inclinado - oculto en mobile muy chico */}
           <div
-            className={`relative w-[100px] sm:w-[140px] md:w-[200px] lg:w-[260px] xl:w-[300px] will-change-transform transition-all duration-[1500ms] ease-out delay-300 hidden sm:block -mr-8 sm:-mr-12 md:-mr-16 lg:-mr-20 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
-            }`}
+            className={`relative w-[100px] sm:w-[140px] md:w-[200px] lg:w-[260px] xl:w-[300px] will-change-transform transition-all duration-[1500ms] ease-out delay-300 hidden sm:block -mr-8 sm:-mr-12 md:-mr-16 lg:-mr-20 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
+              }`}
           >
-            <img 
-              src="/images/extintor.png" 
-              alt="Extintor Yukon - Proteccion contra incendios" 
+            <img
+              src="/images/extintor.png"
+              alt="Extintor Yukon - Proteccion contra incendios"
               className="w-full h-auto relative z-10 drop-shadow-2xl"
               style={{ transform: "rotate(-15deg)" }}
             />
@@ -110,26 +98,24 @@ export function HeroSection() {
 
           {/* Extintor central */}
           <div
-            className={`relative w-[200px] sm:w-[260px] md:w-[340px] lg:w-[420px] xl:w-[480px] will-change-transform transition-all duration-[1500ms] ease-out delay-500 z-10 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
-            }`}
+            className={`relative w-[200px] sm:w-[260px] md:w-[340px] lg:w-[420px] xl:w-[480px] will-change-transform transition-all duration-[1500ms] ease-out delay-500 z-10 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
+              }`}
           >
-            <img 
-              src="/images/extintor.png" 
-              alt="Extintor Yukon - Proteccion contra incendios" 
+            <img
+              src="/images/extintor.png"
+              alt="Extintor Yukon - Proteccion contra incendios"
               className="w-full h-auto relative z-10 drop-shadow-2xl"
             />
           </div>
 
           {/* Extintor derecho inclinado - oculto en mobile muy chico */}
           <div
-            className={`relative w-[100px] sm:w-[140px] md:w-[200px] lg:w-[260px] xl:w-[300px] will-change-transform transition-all duration-[1500ms] ease-out delay-700 hidden sm:block -ml-8 sm:-ml-12 md:-ml-16 lg:-ml-20 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
-            }`}
+            className={`relative w-[100px] sm:w-[140px] md:w-[200px] lg:w-[260px] xl:w-[300px] will-change-transform transition-all duration-[1500ms] ease-out delay-700 hidden sm:block -ml-8 sm:-ml-12 md:-ml-16 lg:-ml-20 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[400px]"
+              }`}
           >
-            <img 
-              src="/images/extintor.png" 
-              alt="Extintor Yukon - Proteccion contra incendios" 
+            <img
+              src="/images/extintor.png"
+              alt="Extintor Yukon - Proteccion contra incendios"
               className="w-full h-auto relative z-10 drop-shadow-2xl"
               style={{ transform: "rotate(15deg)" }}
             />

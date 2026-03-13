@@ -1,11 +1,50 @@
 "use client"
 
-import { Flame, Droplets, Bell, ArrowRight } from "lucide-react"
+import { Flame, Droplets, Bell, ArrowRight, LucideProps } from "lucide-react"
 import { Button } from "@/components/ui/button"
+
+const ExtinguisherIcon = (props: LucideProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M15 6.5V3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3.5" />
+    <path d="M9 18h8" />
+    <path d="M18 3h-3" />
+    <path d="M11 3a6 6 0 0 0-6 6v11" />
+    <path d="M5 13h4" />
+    <path d="M17 10a4 4 0 0 0-8 0v10a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2Z" />
+  </svg>
+)
+
+const SmokeAlarmIcon = (props: LucideProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M11 21c0-2.5 2-2.5 2-5" />
+    <path d="M16 21c0-2.5 2-2.5 2-5" />
+    <path d="m19 8-.8 3a1.25 1.25 0 0 1-1.2 1H7a1.25 1.25 0 0 1-1.2-1L5 8" />
+    <path d="M21 3a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a1 1 0 0 1 1-1z" />
+    <path d="M6 21c0-2.5 2-2.5 2-5" />
+  </svg>
+)
 
 const services = [
   {
-    icon: Flame,
+    icon: ExtinguisherIcon,
     title: "Mantenimiento de Extintores",
     description: "Dotación, control, recarga y mantenimiento bajo Norma IRAM 3517, con registro oficial del GCBA. Trabajamos junto a Yukon S.A., fábrica líder y de mayor trayectoria en el rubro.",
     normas: ["IRAM 3517"],
@@ -17,7 +56,7 @@ const services = [
     normas: ["IRAM 3546", "IRAM 3594", "NFPA 25"],
   },
   {
-    icon: Bell,
+    icon: SmokeAlarmIcon,
     title: "Sistemas de Detección Electrónica",
     description: "Instalación, mantenimiento y revisión de alarmas y sistemas de detección electrónica según IRAM 3546 y NFPA 72.",
     normas: ["IRAM 3546", "NFPA 72"],
@@ -50,7 +89,7 @@ export function ServicesSection() {
               className="group p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white border border-zinc-100 hover:border-red-200 hover:shadow-lg hover:shadow-red-500/5 transition-all duration-300 text-left flex flex-col"
             >
               <div className="mb-6 flex items-center justify-between">
-                <div className="p-4 rounded-2xl bg-red-50 text-red-600">
+                <div className="p-4 rounded-2xl bg-[#f5ecda] text-[color:var(--cta-strong)]">
                   <service.icon className="h-8 w-8" strokeWidth={1.5} />
                 </div>
                 <div className="flex gap-1">

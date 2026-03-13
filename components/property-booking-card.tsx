@@ -129,7 +129,7 @@ export function PropertyBookingCard({
           </div>
           <button
             onClick={onBook}
-            className="rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition-colors hover:bg-foreground/90 text-sm"
+            className="rounded-xl bg-[color:var(--cta)] px-6 py-3 font-semibold text-[color:var(--cta-foreground)] transition-colors hover:brightness-95 text-sm shadow-[0_10px_30px_-15px_rgba(177,138,55,0.4)]"
           >
             Book Now
           </button>

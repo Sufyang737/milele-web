@@ -12,6 +12,9 @@ html {
   /* Converting to light mode theme */
   --background: #f6f6f6;
   --foreground: oklch(0.1 0 0);
+  --cta: #efcd40;
+  --cta-foreground: #1a1505;
+  --cta-strong: #c9aa18;
   --card: #ffffff;
   --card-foreground: oklch(0.1 0 0);
   --popover: #ffffff;
