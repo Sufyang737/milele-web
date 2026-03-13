@@ -63,6 +63,7 @@ export function HeroSection() {
           }}
         >
           <video autoPlay loop muted playsInline className="w-full h-full object-cover" src="/edificios.mp4" />
+          <div className="absolute inset-0 bg-black/30" />
         </div>
       </div>
 
@@ -73,10 +74,22 @@ export function HeroSection() {
           <div
             className={`transition-all duration-1000 delay-[800ms] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}
           >
-            <h1 className="font-serif text-[2.8rem] sm:text-[3.8rem] md:text-[4.8rem] lg:text-[5.6rem] xl:text-[6.6rem] 2xl:text-[7.6rem] font-bold leading-none mb-2 sm:mb-3 w-full px-2 sm:px-4 max-w-6xl mx-auto text-balance text-black drop-shadow-[0_10px_26px_rgba(0,0,0,0.4)]">
+            <h1
+              className="font-serif text-[2.8rem] sm:text-[3.8rem] md:text-[4.8rem] lg:text-[5.6rem] xl:text-[6.6rem] 2xl:text-[7.6rem] font-bold leading-none mb-2 sm:mb-3 w-full px-2 sm:px-4 max-w-6xl mx-auto text-balance"
+              style={{
+                color: '#bfaa54',
+                textShadow: '2px 2px 0px rgba(255,255,255,0.4), 0px 4px 20px rgba(0,0,0,0.5), 0px 0px 30px rgba(255,255,255,0.2)'
+              }}
+            >
               MILELE
             </h1>
-            <p className="font-serif text-[1rem] sm:text-[1.2rem] md:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] font-normal tracking-wide text-black drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)] px-2">
+            <p
+              className="font-serif text-[1rem] sm:text-[1.2rem] md:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] font-normal tracking-wide px-2"
+              style={{
+                color: '#bfaa54',
+                textShadow: '1px 1px 0px rgba(255,255,255,0.3), 0px 2px 10px rgba(0,0,0,0.4)'
+              }}
+            >
               La protección que tu espacio merece
             </p>
           </div>

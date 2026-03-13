@@ -2,34 +2,34 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
-    question: "¿Con qué frecuencia debo recargar los extintores?",
+    question: "¿Con qué frecuencia se recarga un extintor?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "La recarga de los extintores debe realizarse una vez al año, como parte del mantenimiento preventivo y para garantizar su correcto funcionamiento en caso de emergencia.",
   },
   {
-    question: "¿Cuáles son las normativas vigentes para edificios?",
+    question: "¿Qué tipo de extintores puede tener un edificio?",
     answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "En los consorcios, los tipos de extintores más utilizados son los de polvo químico seco tipo ABC (para áreas comunes como bauleras, pisos y pasillos) y los de dióxido de carbono (CO2) para instalaciones eléctricas, ya que no conducen electricidad y son adecuados para incendios en equipos eléctricos.",
   },
   {
-    question: "¿Qué tipos de extintores necesita mi empresa?",
+    question: "¿Cómo verificar si un extintor tiene la revisión realizada?",
     answer:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Mediante el color del marbete IRAM. Este se reemplaza anualmente abriendo el extintor durante el mantenimiento técnico. Cada año corresponde a un color específico, lo que permite identificar visualmente el período de vigencia de la carga.",
   },
   {
-    question: "¿Ofrecen certificación oficial del GCBA?",
+    question: "¿Qué color tiene el marbete de cada año?",
     answer:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "De acuerdo con las normas establecidas por el IRAM, el color del marbete de los extintores se determina según el último dígito del año en que se realiza la recarga o mantenimiento. Los mismos son: 0: MARRÓN CLARO, 1: NEGRO, 2: AMARILLO, 3: CELESTE, 4: VERDE OSCURO, 5: AZUL, 6: LILA, 7: BLANCO, 8: VERDE CLARO, 9: NARANJA. De esta manera, el color del marbete permite identificar rápidamente el año en que se realizó la recarga o mantenimiento del extintor. Ejemplo: Los extintores recargados durante el año 2026 deben contar con marbete de color lila.",
   },
   {
-    question: "¿Cuánto tiempo demora un servicio de mantenimiento?",
+    question: "¿Cómo es el servicio de mantenimiento de instalaciones fijas?",
     answer:
-      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+      "Primero se realiza un ensayo para determinar el estado de las instalaciones y la frecuencia necesaria de controles. Seis meses después, se lleva a cabo la prueba hidráulica para verificar la resistencia y el correcto funcionamiento del sistema bajo normativas de la AGC.",
   },
   {
-    question: "¿Atienden emergencias fuera de horario?",
+    question: "¿Qué niveles tienen las instalaciones fijas en consorcios?",
     answer:
-      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+      "Existen tres niveles comunes: Nivel 1 (Cañería Seca) para uso de bomberos; Nivel 2 (Sistema Húmedo conectado a red o tanque sanitario) para presión constante; y Nivel 3 (Sistema Húmedo Presurizado) con tanque exclusivo y bombas, común en edificios de gran altura.",
   },
 ]
 

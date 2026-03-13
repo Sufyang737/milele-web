@@ -20,12 +20,17 @@ export function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
-            <button className="relative flex items-center justify-center gap-0 bg-[color:var(--cta)] text-[color:var(--cta-foreground)] rounded-full pl-5 sm:pl-6 pr-1.5 py-1.5 transition-all duration-300 group overflow-hidden hover:brightness-95 shadow-[0_10px_30px_-15px_rgba(177,138,55,0.4)]">
+            <a
+              href="https://wa.me/5491139093951?text=hola%20vengo%20desde%20la%20web%20y%20quiero%20saber%20mas%20acerca%20de%20los%20servicios%20de%20milele!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative flex items-center justify-center gap-0 bg-[color:var(--cta)] text-[color:var(--cta-foreground)] rounded-full pl-5 sm:pl-6 pr-1.5 py-1.5 transition-all duration-300 group overflow-hidden hover:brightness-95 shadow-[0_10px_30px_-15px_rgba(177,138,55,0.4)]"
+            >
               <span className="text-sm pr-3 sm:pr-4">Solicitar presupuesto</span>
               <span className="w-9 h-9 sm:w-10 sm:h-10 bg-[color:var(--cta-foreground)] rounded-full flex items-center justify-center">
                 <ArrowUpRight className="w-4 h-4 text-[color:var(--cta)]" />
               </span>
-            </button>
+            </a>
 
             <button className="relative flex items-center justify-center gap-0 border border-[color:var(--cta)] rounded-full pl-5 sm:pl-6 pr-1.5 py-1.5 transition-all duration-300 group overflow-hidden">
               <span className="absolute inset-0 bg-[color:var(--cta)] rounded-full scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-300" />

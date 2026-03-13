@@ -4,7 +4,6 @@ import { StatsSection } from "@/components/stats-section"
 import { ServicesSection } from "@/components/services-section"
 import { CertificacionesSection } from "@/components/certificaciones-section"
 import { FeaturesSection } from "@/components/features-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
 import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
@@ -19,7 +18,6 @@ export default function Home() {
       <CertificacionesSection />
       <FeaturesSection />
       {/* <CTASection /> */}
-      <TestimonialsSection />
       <FAQSection />
       <Footer />
     </main>

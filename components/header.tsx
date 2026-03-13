@@ -88,13 +88,7 @@ export function Header() {
             >
               ¿Por qué elegirnos?
             </a>
-            <a
-              href="#testimonials"
-              onClick={(e) => handleSmoothScroll(e, "testimonials")}
-              className="text-sm font-medium tracking-tight text-black hover:text-[color:var(--cta)] transition-colors cursor-pointer"
-            >
-              Clientes
-            </a>
+
             <a
               href="#faq"
               onClick={(e) => handleSmoothScroll(e, "faq")}
@@ -105,7 +99,12 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-1">
-            <button className="relative flex items-center gap-0 border border-[color:var(--cta)] rounded-full pl-5 pr-1 py-1 transition-all duration-300 group overflow-hidden">
+            <a
+              href="https://wa.me/5491139093951?text=hola%20vengo%20desde%20la%20web%20y%20quiero%20saber%20mas%20acerca%20de%20los%20servicios%20de%20milele!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative flex items-center gap-0 border border-[color:var(--cta)] rounded-full pl-5 pr-1 py-1 transition-all duration-300 group overflow-hidden"
+            >
               <span className="absolute inset-0 rounded-full scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-300 bg-[color:var(--cta)]" />
               <span className="text-sm pr-3 relative z-10 transition-colors duration-300 text-[color:var(--cta-strong)] group-hover:text-[color:var(--cta-foreground)]">
                 Contactar
@@ -114,7 +113,7 @@ export function Header() {
                 <ArrowRight className="w-4 h-4 text-[color:var(--cta-strong)] group-hover:opacity-0 absolute transition-opacity duration-300" />
                 <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-300 text-[color:var(--cta-foreground)]" />
               </span>
-            </button>
+            </a>
           </div>
 
           <button
@@ -151,13 +150,7 @@ export function Header() {
             >
               ¿Por qué elegirnos?
             </a>
-            <a
-              href="#testimonials"
-              onClick={(e) => handleSmoothScroll(e, "testimonials")}
-              className="transition-colors cursor-pointer text-black hover:text-[color:var(--cta)]"
-            >
-              Clientes
-            </a>
+
             <a
               href="#faq"
               onClick={(e) => handleSmoothScroll(e, "faq")}
@@ -166,7 +159,12 @@ export function Header() {
               FAQ
             </a>
             <div className={`flex flex-col gap-3 mt-4 pt-4 border-t ${isScrolled ? "border-zinc-200" : "border-border"}`}>
-              <button className="relative flex items-center gap-0 border border-[color:var(--cta)] rounded-full pl-5 pr-1 py-1 w-fit transition-all duration-300 group overflow-hidden">
+              <a
+                href="https://wa.me/5491139093951?text=hola%20vengo%20desde%20la%20web%20y%20quiero%20saber%20mas%20acerca%20de%20los%20servicios%20de%20milele!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative flex items-center gap-0 border border-[color:var(--cta)] rounded-full pl-5 pr-1 py-1 w-fit transition-all duration-300 group overflow-hidden"
+              >
                 <span className="absolute inset-0 rounded-full scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-300 bg-[color:var(--cta)]" />
                 <span className="text-sm pr-3 relative z-10 transition-colors duration-300 text-[color:var(--cta-strong)] group-hover:text-[color:var(--cta-foreground)]">
                   Contactar
@@ -175,7 +173,7 @@ export function Header() {
                   <ArrowRight className="w-4 h-4 text-[color:var(--cta-strong)] group-hover:opacity-0 absolute transition-opacity duration-300" />
                   <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-300 text-[color:var(--cta-foreground)]" />
                 </span>
-              </button>
+              </a>
             </div>
           </nav>
         )}
